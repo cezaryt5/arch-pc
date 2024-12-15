@@ -25,22 +25,22 @@ documentclass: scrreprt
 polyglossia-lang:
   name: russian
   options:
+	- spelling=modern
+	- babelshorthands=true
 polyglossia-otherlangs:
   name: english
 ## I18n babel
 babel-lang: russian
 babel-otherlangs: english
 ## Fonts
-mainfont: IBM Plex Serif
-romanfont: IBM Plex Serif
-sansfont: IBM Plex Sans
-monofont: IBM Plex Mono
-mathfont: STIX Two Math
-mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
-romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
-sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
-monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
-mathfontoptions:
+mainfont: PT Serif
+romanfont: PT Serif
+sansfont: PT Sans
+monofont: PT Mono
+mainfontoptions: Ligatures=TeX
+romanfontoptions: Ligatures=TeX
+sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
+monofontoptions: Scale=MatchLowercase,Scale=0.9
 ## Biblatex
 biblatex: true
 biblio-style: "gost-numeric"
@@ -65,38 +65,31 @@ header-includes:
   - \usepackage{float} # keep figures where there are in the text
   - \floatplacement{figure}{H} # keep figures where there are in the text
 ---
- # <center>Шаблон отчёта по лабораторной работе </center>
-## <center>архитектура компьютерa</center>
-### <center> мохамед Муса</center>
-#  Цель работы 
-
+# Цель
 Цель этой работы - углубиться в изучение языка ассемблера, и мы будем больше практиковаться в том, как создавать программы, способные выполнять уравнения
 
 # выполнения лабораторной работы
-- Сначала я создал файл  lab7-1.asm, скопировал код из pdf и запустил его :
+- Сначала я создал файл  lab8-1.asm, скопировал код из pdf и запустил его :
 ![first picture](image/lab1.png)
-![first picture](image/conlab1.png)
+![first picture](image/clab1.png)
 
-- И я внес необходимые изменения из pdf-файл в lab7-1.asm и запустил его снова :
+- И я внес необходимые изменения из pdf-файл в lab8-1.asm и запустил его снова :
 ![second picture](image/lab1e.png)
-![second picture](image/clab1e.png)
+![second picture](image/lab1e1.png)
 
-- Я также запустил файл lab7-2 и отредактировал его в соответствии с инструкцией в формате pdf :
+- Я также запустил файл lab8-2.asm и отредактировал его в соответствии с инструкцией в формате pdf :
 ![third picture](image/clab2.png){#fig:001 width=70%}
 ![forth picture](image/runlab2.png)
 
-- В-третьих, я создал файл lab7-2.lst с помощью команды nasm :
-![fifth picture](image/lstc.png)
+- В-третьих, И я также создал файл lab8-3.cm, написал его код и предоставил необходимые аргументы для запуска кода :
+![fifth picture](image/clab3.png)
+![forth picture](image/runlab3.png)
 
 # Bыполнения заданий для самостоятельной работы:
-- сначала я написал первую программу и запустил еe :
+- Сначала я создал программу в соответствии с инструкцией в формате pdf, выбрал функцию из таблицы вариантов и запустил код :
 
-![fifth picture](image/pro1.png)
+![fifth picture](image/runpro1.png)
 ![fifth picture](image/cpro1.png)
 
-- и я написал вторую программу в соответствии с инструкциями, приведенными в pdf-файле и запустил ее:
-![fifth picture](image/cpro2.png)
-![fifth picture](image/pro2.png)
-
 # Выводы
-В этом pdf-файле мы подробнее попрактиковались в написании кода на ассемблере и узнали о типе файла .lst.
+В этой работе мы больше практиковались в написании математических выражений с помощью ассемблерного кода
